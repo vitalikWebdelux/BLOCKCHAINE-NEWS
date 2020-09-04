@@ -1,0 +1,81 @@
+.bn-header
+	$right: 17px
+	position: relative
+	background-color: white
+	&__desc
+		line-height: 1.1
+		font-size: 14px
+		margin: 0 10px
+	.navbar-collapse
+		+mq(lg)
+			padding-top: 15px
+
+	&__option
+		width: 0
+		height: 50px
+		background-color: $bn-blue
+		text-align: center
+		line-height: 45px
+		
+		padding-right: 50px
+		transition: all .5s ease
+		top: 50%
+		right: 0
+		transform: translateY(-50%)
+		z-index: 2
+		border-radius: 5px
+		position: absolute
+		box-shadow: 0px 0px 51px 0px rgba(160, 160, 160, 0.11)
+	
+
+		&.active
+
+			width: 90%
+			padding-left: 50px
+			transition: all .5s ease
+			top: 100%
+			transform: translateX(50%)
+			right: 50%
+
+	&__search
+
+		position: absolute
+		right: $right
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 22px
+		cursor: pointer
+		transition: all .5s ease
+		
+		&.active
+			transition: all .8s ease
+			right: calc(100% - 35px)
+
+	&__exit
+		opacity: 0
+		right: $right
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 22px
+		position: absolute
+		z-index: -1
+		transition: all .3s ease
+		&.active
+			transition: all .5s ease
+			opacity: 1
+
+	&__language
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 22px
+		position: absolute
+		right: 20px
+		border-radius: 5px
+		color: white
+		line-height: 2.2
+		padding: 0 8px
+		background-color: $bn-blue
+
+	&__box
+		width: 150px
+		color: white

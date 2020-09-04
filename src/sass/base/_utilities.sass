@@ -1,0 +1,64 @@
+html
+  font-size: 10px
+  min-width: 320px
+
+  // color: $text-color
+.screen-reader-response
+  // sass-lint:disable no-important
+  display: none !important
+.wpcf7-response-output
+  // sass-lint:disable no-important
+  display: none !important
+span.wpcf7-not-valid-tip
+  font: 1.4rem/1 gm
+  color: #fa0000
+  display: block
+  text-align: center
+  padding-top: .6rem
+  margin-bottom: -1rem
+
+button, video, input, textarea
+  &:focus
+    outline: none
+
+body
+  min-width: 320px
+  background-color: $bn-white
+  .container
+    @media (min-width: 1200px)
+      max-width: 1250px
+    @media (max-width: 1200px)
+      max-width: 100%
+
+::-webkit-scrollbar
+  width: .5rem
+::-webkit-scrollbar-track
+  background: white
+::-webkit-scrollbar-thumb
+  background: $bn-blue
+::-webkit-scrollbar-thumb:hover
+  background: lighten($bn-blue, 5%)
+
+
+img
+  max-width: 100%
+  height: auto
+
+a
+  color: inherit
+  &:hover
+    color: inherit
+    text-decoration: none
+
+
+ul
+  padding: 0
+  margin: 0
+
+%size-img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.watch
+  padding-left: 16px
+  
